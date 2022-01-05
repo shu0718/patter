@@ -1,0 +1,36 @@
+import java.util.*;
+import java.io.*;
+
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        
+        for(int i=1;i<=n;i++)
+        {
+          for(int j=n-i;j>0;j--)
+          {
+            System.out.print("\t");
+          }
+          for(int z=1;z<=i;z++)
+          {
+            System.out.print("*\t");
+          }
+          System.out.println();
+        }
+        
+    }
+}
+
+
+INPUT:================================
+4
+
+OUTPUT:===============================
+
+			*	
+		*	*	
+	*	*	*	
+*	*	*	*	
