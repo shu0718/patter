@@ -1,0 +1,33 @@
+import java.util.*;
+import java.io.*;
+
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        
+        char ch = 'A';
+        for(int i=1;i<=n;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(ch+"\t");
+            }
+            System.out.println();
+            ch++;
+        }
+    }
+}
+
+
+INPUT:========
+4
+
+OUTPUT:=======
+
+A	
+B	B	
+C	C	C	
+D	D	D	D
